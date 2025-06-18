@@ -7,7 +7,7 @@ action = ''
 total_rows = 0
 
 filename = "maintenance_log.csv"
-fieldnames = ["Name of Machine", "Date of Maintenance", "Name of Technician", "Name of Maintenance", "Hours Since Last Service"]
+fieldnames = ["Name of Machine", "Date of Maintenance", "Name of Technician", "Name of Maintenance", "Hours Since Last Service", "Entry Time"]
 does_file_exist = os.path.exists(filename)
 
 try:
