@@ -1,11 +1,11 @@
-# 🛠️ Maintenance Log Tracker
+# Maintenance Log Tracker
 
 A command-line tool for tracking and recording maintenance entries on machines.  
 This utility allows users to enter and save machine maintenance details into a CSV file for long-term tracking and review.
 
 ---
 
-## ✅ Features
+## Features
 
 - Add new maintenance entries interactively
 - Store entries in a persistent CSV file
@@ -20,7 +20,7 @@ This utility allows users to enter and save machine maintenance details into a C
 
 ---
 
-## 🔮 Future Features
+## Future Features
 
 - Search entries by machine or technician name
 - Automatically timestamp each log entry
@@ -30,16 +30,17 @@ This utility allows users to enter and save machine maintenance details into a C
 
 ---
 
-## 📁 Technologies Used
+## Technologies Used
 
 - Python 3.13.3
 - `csv` module
 - `os` module (for file checks)
 - `datetime` module
+- `datetime` package
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repository:
    ```bash
