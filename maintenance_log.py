@@ -12,7 +12,7 @@ does_file_exist = os.path.exists(filename)
 
 try:
     with open(filename, mode = 'a', newline = '') as file:
-        writer = csv.DictWriter(file, fieldnames=fieldnames, delimiter="\t")
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
 
         if not does_file_exist:
             writer.writeheader()
@@ -40,14 +40,15 @@ try:
             for key, value in log.items():
                 print(f"{key}: {value}")
             print("-" * 40)
-
-            with open(filename, mode='r', newline='') as f:
-                total_rows = sum(1 for _ in f) - 1
-
 except Exception as e:
     print("An Error Occured.")
     print(f"Error Details: {e}")
 
+try:
+    with open(filename, mode='r', newline='') as file:
+        total_rows = sum(1 for _ in file) - 1
+except:
+    total_rows = 0
 
 print(f"\nTotal entries recorded: {len(notebook)}")
 print(f"Total entries in file: {total_rows}")
