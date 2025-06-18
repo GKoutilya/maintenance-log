@@ -17,6 +17,7 @@ This utility allows users to enter and save machine maintenance details into a C
   - Technician name
   - Maintenance performed
   - Hours since last service
+  - Time of Entry
 
 ---
 
