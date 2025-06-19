@@ -2,7 +2,7 @@ import csv
 import os
 from datetime import datetime
 
-notebook = []
+count = 0
 action = ''
 total_rows = 0
 
@@ -33,7 +33,7 @@ try:
             log["Entry Time"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
             writer.writerow(log)
-            notebook.append(log)
+            count += 1
 
             print("New Entry Added.")
             print("-" * 40)
@@ -50,6 +50,6 @@ try:
 except:
     total_rows = 0
 
-print(f"\nTotal entries recorded: {len(notebook)}")
+print(f"\nTotal entries recorded: {count}")
 print(f"Total entries in file: {total_rows}")
 print("Thanks and Goodbye!\n")
